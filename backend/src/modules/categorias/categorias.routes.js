@@ -1,8 +1,9 @@
 import { Router } from 'express';
+import { listar } from './categorias.controller.js';
 
 const router = Router();
 
 // Módulo categorias: categorías de productos (apoya el filtro del catálogo, RF-03)
-// Aquí se definen las rutas. Ejemplo: router.get('/', listar);
+router.get('/', listar);
 
 export default router;
